@@ -59,3 +59,33 @@
         @unknown case _:
     }
     ```
+
+## 반복문
+* ### For
+    배열과 범위를 반복하고 루프할 떄마다 하나의 항목을 꺼내 상수에 할당한다
+
+    ```Swift
+    let langauges = ["java", "c", "kotlin", "go"]
+
+    for lang in langauges {
+        lang
+    } // java c kotlin go
+
+    let range = 1...5
+
+    // for문이 제공하는 상수 
+    for _ in range {
+        "play"
+    }
+    ```
+
+* ### While
+    다른 언어들과 비슷하게 조건식을 만족할 때까지 순회한다. 식에 괄호를 쓰는것 제외하고는 다른 언어들과 동일하다
+    > 다른 언어들에서는 ```do-while```이라고 불리는 문을 사용하려면 다음과 같이 사용해야 한다
+
+    ```Swift
+        repeat {
+            print("false")
+        } while false
+    ```
+> 모든 반복문에는 반복문을 탈출하거나 반복문을 건너뛰는 문법이 존재한다.```break``` 키워드를 사용하여 언제든 루프를 탈출할 수 있으며, ```continue```를 사용하여 현재 루프를 끝내고 다음 루프로 넘어갈 수 있다.
